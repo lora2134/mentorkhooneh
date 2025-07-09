@@ -1,0 +1,162 @@
+@font-face {
+  font-family: 'Vazirmatn';
+  src: url("../fonts/Vazirmatn-Regular.ttf");
+      
+}
+:root{
+    --color-primary-blue: #0A43ED;
+    --color-primary-orange: #FF5E01;
+    --color-primary-black: #282828;
+
+    --color-secondary-blue: #B6CDFF;
+    --color-secondary-orange: #FFBDA7;
+    --color-secondary-black: #3E3E3E;
+
+    --color-Tertiary-dark-grey: #515151;
+    --color-Tertiary-grey: #455A64;
+    --color-Tertiary-light-grey: #DFDFDF;
+     
+    --font-family:  Vazirmatn;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+.img1{
+    width: 760px;
+    height: 730px;
+    z-index: 98;
+}
+.img2{
+    width: 402.16px;
+    height: 402.16px;
+    z-index: 99;
+    position: absolute;
+    left: 40px;
+    top: 4.5%;
+}
+.navbar1{
+    direction: rtl;
+    z-index: 100;
+    position: absolute;
+    top: 1px;
+    left:  0;
+    right: 10%;
+    width: 90%;
+    
+}
+.navbar1 ul, .sidebar {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    font-family: var(--font-family);
+   
+    align-items: center;
+    
+}
+.navbar1 li , .sidebar li{
+    height: 50px;
+}
+.navbar1 a , .sidebar a{
+    height: 100%;
+    padding: 0px 30px ;
+    text-decoration: none;
+    color: var(--color-primary-black);
+    display: flex;
+    align-items: center;
+}
+
+nav li:first-child{
+    margin-left: auto;
+}
+.sidebar{
+    direction: rtl;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: auto;
+    height: 100vh;
+    width: 150px;
+    z-index: 999;
+    background-color: rgba(255, 255, 255, 0.7);
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    display: none;
+}
+.menubtn{
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width:600px){
+    .hideonMobile{
+        display: none;
+    }
+    .menubtn{
+        display: block;
+    }
+
+    
+}
+
+
+@media(max-width:400px){
+    .sidebar{
+        width: 100%;
+    }
+    
+
+    
+}
+
+
+@media(min-width:600px){
+    .sidebar{
+        display: none !important;
+    }
+    
+
+    
+}
