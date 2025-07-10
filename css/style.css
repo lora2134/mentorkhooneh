@@ -25,16 +25,16 @@
 }
 .img1{
     width: 760px;
-    height: 730px;
+    height: auto;
     z-index: 98;
 }
-.img2{
-    width: 402.16px;
-    height: 402.16px;
+.mentoor-img-groupvideo-phon{
+    width: 250.16px;
+    height: auto;
     z-index: 99;
     position: absolute;
-    left: 40px;
-    top: 4.5%;
+    left: 60px;
+    top: 3.5%;
 }
 .navbar1{
     direction: rtl;
@@ -42,17 +42,30 @@
     position: absolute;
     top: 1px;
     left:  0;
-    right: 10%;
-    width: 90%;
+    
+    width: 100%;
+   
     
 }
-.navbar1 ul, .sidebar {
+.navbar1 ul {
+    width: 95%;
+    list-style: none;
+    display: flex;
+    font-family: var(--font-family);
+    font-size: 24px;
+    align-items: center;
+    margin-right: 5%;
+    
+}
+ .sidebar {
     width: 100%;
     list-style: none;
     display: flex;
     font-family: var(--font-family);
-   
+    font-size: 20px;
     align-items: center;
+    
+    
     
 }
 .navbar1 li , .sidebar li{
@@ -87,6 +100,8 @@ nav li:first-child{
 }
 .menubtn{
     display: none;
+    margin-right: -5%;
+
 }
 
 
@@ -130,7 +145,8 @@ nav li:first-child{
 
 
 
-@media(max-width:600px){
+@media screen and (max-width:450px){
+    /*phone*/
     .hideonMobile{
         display: none;
     }
@@ -141,14 +157,24 @@ nav li:first-child{
     
 }
 
+@media screen and (max-width:900px ){
+    /*ipad*/
+   .navbar1 ul {
+    font-size: 17px;
+    }
+    .img1{
+    width: 400px;
+    }
+    .navbar1 a , .sidebar a{
+    padding: 0px 15px ;
+}
+}
+
 
 @media(max-width:400px){
     .sidebar{
         width: 100%;
     }
-    
-
-    
 }
 
 
@@ -156,7 +182,4 @@ nav li:first-child{
     .sidebar{
         display: none !important;
     }
-    
-
-    
 }
