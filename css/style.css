@@ -250,7 +250,13 @@ nav li:first-child{
     border: none;
     padding: 8PX;
 }
-
+.profile-pic{
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    background-color: #5C6D9E;
+    top: 210%;
+}
 
 
 
