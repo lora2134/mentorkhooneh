@@ -254,11 +254,36 @@ nav li:first-child{
     position: absolute;
     width: 400px;
     height: 400px;
-    background-color: #5C6D9E;
-    top: 210%;
+    background-color: #728fdf;
+    top: 200%;
+    left: 10%;
+    border-radius: 35px;
+    background-image: url(../img/profile.png);
+    background-size: 340px 370px;
+    background-position: center;
+    background-position-y: bottom;
+    background-repeat:no-repeat;
 }
-
-
+.tozihat{
+    margin-top: 26%;
+    background-color: var(--color-secondary-orange);
+    height: 300px;
+    
+    align-content: center;
+}
+.tozihat-table{
+    direction: rtl;
+    gap: 30px;
+    width: 100%;
+    vertical-align: middle;
+    text-align: center;
+    font-family: var(--font-family);
+    
+}
+.tozihat-table-td{
+    
+    text-align: center;
+}
 
 
 
