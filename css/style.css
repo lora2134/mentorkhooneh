@@ -289,6 +289,7 @@ nav li:first-child{
     width: 100%;
     height: 1500px;
     direction: rtl;
+    
 }
 .process-steps-h1{
     font-family: var(--font-family);
@@ -327,26 +328,100 @@ nav li:first-child{
 }
 .process-steps-h12{
    position: relative;
-    top: 15%;
+    top: 23%;
+    
 }
 .process-steps-p2{
     position: relative;
-    top: 17%;
+    top: 25%;
     right: 20%;
     font-size: 24px;
+    max-width: 500px;
+    display: flex;
 }
+.process-steps-img3{
+    position: relative;
+    top: 2%;
+    right: 54%;
+    
+}
+.process-steps-img4{
+    position: relative;
+    top: 4%;
+    right: 22%;
+    font-size: 24px;
+    display: inline-block;
+}
+.moarefi{
+    
+    width: 100%;
+    height: 500px;
+    margin-top: 9%;
+}
+.moarefi-text,.moarefi-pic ,.amadegi-pic, .amadegi-text{
+    float: right;
+    width: 50%;
+    height: 100%;
+}
+.process-steps-h13{
+    position: relative;
+    top: 20%;
+    right: 10%;
+}
+.process-steps-p3{
+    position: relative;
+    top: 25%;
+    right: 10%;
+    font-size: 24px;
+    max-width: 500px;
+    display: flex;
+}
+.moarefi-pic-img{
+    margin: 5% 30% 0 0;
+}
+.amadegi{
+    
+    width: 100%;
+    height: 500px;
+    
+}
+.amadegi-pic-img1{
+    position: relative;
+    top:5%;
+    right: 10%;
+    z-index: 0;
+    display: inline-block;
 
+}
+.amadegi-pic-img2{
+    position: relative;
+    top:-82%;
+    right: 7%;
+    z-index: 1;
+    
 
+}
+.process-steps-h14{
+    position: relative;
+    top: 20%;
+    right: 30%;
 
+}
+.process-steps-p4{
+    position: relative;
+    top: 25%;
+    right: 30%;
+    font-size: 24px;
+    max-width: 500px;
+    display: flex;
 
-
-
-
-
-
-
-
-
+}
+.main-footer{
+    background-color: #000a27;
+    width: 100%;
+    height: 400px;
+    margin-top: 60%;
+}
 
 
 
