@@ -60,7 +60,7 @@ p,h1{
    
     
 }
-.navbar1 ul {
+.navbar1 ul{
     width: 95%;
     list-style: none;
     display: flex;
@@ -363,7 +363,7 @@ nav li:first-child{
     height: 500px;
     margin-top: 9%;
 }
-.moarefi-text,.moarefi-pic ,.amadegi-pic, .amadegi-text ,.arzyabi-pic, .arzyabi-text, .eslah-pic, .eslah-text{
+.moarefi-text,.moarefi-pic ,.amadegi-pic, .amadegi-text ,.arzyabi-pic, .arzyabi-text, .eslah-pic, .eslah-text , .footer-div1 .footer-div2{
     float: right;
     width: 50%;
     height: 100%;
@@ -430,10 +430,35 @@ nav li:first-child{
 .num2{
     margin-top: 0.05%;
 }
-
-
-
-
+.navbar-footer{
+    direction: rtl;
+    position: relative;
+    top: 30%;
+    left:  0;
+    width: 100%;
+    
+}
+.navbar-footer ul{
+   width: 100%;
+    list-style: none;
+    display: flex;
+    font-family: var(--font-family);
+    font-size: 24px;
+    align-items: center;
+    margin-right: 5%;
+    gap: 50px;
+}
+.navbar-footer a{
+    text-decoration: none;
+    color: var(--color-Tertiary-light-grey);
+}
+.footer p{
+    color: var(--color-Tertiary-light-grey);
+    position: relative;
+    left: 68%;
+    top: 35%;
+    font-size: 24px;
+}
 
 
 
