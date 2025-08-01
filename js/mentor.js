@@ -8,4 +8,6 @@ function showsidebar(){
     const menubutton = document.querySelector(".menubtn");
     menubutton.style.display ='none';
 }
-
+if (window.innerWidth < 415){
+    document.getElementById("tozihat-table") = 
+}
