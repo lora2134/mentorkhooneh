@@ -573,13 +573,18 @@ nav li:first-child {
     font-family: var(--font-family);
     font-size: 24px;
     align-items: center;
-    margin-right: 5%;
+    margin-right: -925px;
     gap: 50px;
 }
+
 
 .navbar-footer a {
     text-decoration: none;
     color: var(--color-Tertiary-light-grey);
+
+}
+.hideonMobile-footer{
+    
 }
 
 .footer p {
@@ -611,6 +616,7 @@ nav li:first-child {
     padding: 0 30px 0 30px;
 
 }
+
 
 
 
