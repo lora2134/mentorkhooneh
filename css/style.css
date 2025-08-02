@@ -28,6 +28,12 @@
     --Primary-Button-font-size: 28px;
 }
 
+body {
+    width: 100%;
+    overflow-x: hidden;
+    
+}
+
 p,
 h1 {
     display: inline;
@@ -105,7 +111,7 @@ h1 {
     align-items: center;
 }
 
-nav li:first-child {
+.navbar1 li:first-child {
     margin-left: auto;
 }
 
@@ -483,6 +489,7 @@ nav li:first-child {
     float: right;
     width: 50%;
     height: 100%;
+
 }
 
 .process-steps-h13 {
@@ -550,23 +557,23 @@ nav li:first-child {
     background-color: #000a27;
     width: 100%;
     height: 150px;
-    margin-top: 8%;
+    margin-top: 10%;
 }
 
 .num2 {
-    margin-top: 0.05%;
+    margin-top: 0.1%;
 }
 
 .navbar-footer {
     direction: rtl;
     position: relative;
     top: 30%;
-    left: 0;
+    right: 980px;
     width: 100%;
 
 }
 
-.navbar-footer ul {
+.navbar-footer-ul {
     width: 100%;
     list-style: none;
     display: flex;
@@ -583,9 +590,8 @@ nav li:first-child {
     color: var(--color-Tertiary-light-grey);
 
 }
-.hideonMobile-footer{
-    
-}
+
+
 
 .footer p {
     color: var(--color-Tertiary-light-grey);
@@ -609,7 +615,8 @@ nav li:first-child {
     direction: rtl;
     text-align: center;
     position: relative;
-    left: 10%;
+    left: 8%;
+    
 }
 
 .num1 table td {
@@ -620,7 +627,11 @@ nav li:first-child {
 
 
 
-
+@media (max-width:1541px) {
+    .icon{
+        display: none;
+    }
+}
 
 /*responsive*/
 @media (max-width:1441px) {
@@ -657,6 +668,9 @@ nav li:first-child {
 
     .small-mark-h12 {
         left: 34%;
+    }
+    .icon{
+        display: none;
     }
 
 }
@@ -720,6 +734,9 @@ nav li:first-child {
         border: none;
         padding: 8PX;
     }
+    .icon{
+        display: none;
+    }
 }
 
 @media screen and (max-width:415px) {
@@ -769,7 +786,8 @@ nav li:first-child {
         position: relative;
         top: 7%;
         left: 14%;
-        width: 300px;
+        width: 90%;
+        max-width: 320px;
         font-size: 18px;
     }
 
@@ -787,9 +805,11 @@ nav li:first-child {
     }
 
     .girl-on-page-png {
-        margin-top: 20%;
+        position: relative;
+        margin: 10% 0 0 0;
         left: 20%;
         width: 200px;
+        
     }
 
     .small-mark {
@@ -848,9 +868,11 @@ nav li:first-child {
     }
 
     .small-mark-btn {
-        left: -65%;
+        left: -35%;
         top: 85%;
-        width: 400px;
+        width: 100%;
+        max-width: 520px;
+        font-size: 18px;
     }
 
     .tozihat {
@@ -861,7 +883,7 @@ nav li:first-child {
     }
 
     .tozihat-table {
-        
+        display: none;
         width: 100%;
         vertical-align: middle;
         text-align: center;
@@ -871,26 +893,27 @@ nav li:first-child {
 
     .process-steps {
         width: 100%;
-        
-        height: 2400px;
+
+        height: 2200px;
     }
 
     .process-steps-h1 {
         font-size: 22px;
-        right: 20%;
+        right: 16%;
+        top: 5%;
     }
 
     .arzyabi {
         width: 100%;
         height: 500px;
-       
+
         margin-top: 3%;
     }
 
     .eslah {
         width: 100%;
-        height: 600px;
-        
+        height: 800px;
+
         margin-top: 9%;
     }
 
@@ -901,43 +924,44 @@ nav li:first-child {
     }
 
     .process-steps-img2 {
-        top: -24%;
-        right: 18%;
+        top: -62%;
+        right: 14%;
         width: 300px;
     }
 
     .process-steps-h11 {
         font-size: 28px;
         right: 25%;
-        top: -40%;
+        top: 4%;
     }
 
     .process-steps-p {
 
         right: 5%;
-        top: -37%;
+        top: 6%;
         font-size: 20px;
         text-align: center;
-        width: 500px;
+        
         display: flex;
     }
 
     .process-steps-h12 {
 
-        top: -12%;
+        top: 75%;
         right: 30%;
         font-size: 28px;
     }
 
     .process-steps-p2 {
-        top: -9.5%;
+        top: 79.5%;
         right: 5%;
         font-size: 20px;
         text-align: center;
+        
     }
 
     .process-steps-img3 {
-        top: -170%;
+        top: -113%;
         right: 15%;
         width: 300px;
 
@@ -945,7 +969,7 @@ nav li:first-child {
 
     .process-steps-img4 {
         position: relative;
-        top: -216%;
+        top: -182%;
         right: 12%;
         font-size: 24px;
         display: inline-block;
@@ -953,10 +977,10 @@ nav li:first-child {
     }
 
     .moarefi {
-        
+
         width: 100%;
         height: 500px;
-        margin-top: 9%;
+        margin-top: 19%;
     }
 
     .moarefi-text,
@@ -968,69 +992,131 @@ nav li:first-child {
     .eslah-pic,
     .eslah-text,
     .footer-div1 .footer-div2 {
-
+        height: 50%;
         width: 100%;
-        height: 100%;
+
+
     }
 
     .process-steps-h13 {
         font-size: 24px;
-        top: -252%;
+        top: -140%;
         right: 10%;
     }
 
     .process-steps-p3 {
-        top: -249%;
+        top: -129%;
         right: 6%;
         font-size: 20px;
         text-align: center;
+        
     }
 
     .moarefi-pic-img {
         position: relative;
-        top: -200%;
+        top: -140%;
         width: 300px;
         left: 6%;
     }
 
     .amadegi {
-        
+
 
         height: 700px;
         margin-top: 9%;
     }
 
     .amadegi-pic-img1 {
-        top: -307%;
+        top: -207%;
         right: 14%;
         width: 300px;
 
     }
 
     .amadegi-pic-img2 {
-        
-        top: -346.5%;
+
+        top: -286.5%;
         right: 10%;
-        
+
         width: 300px;
 
     }
 
     .process-steps-h14 {
-       
-        top: -157%;
+
+        top: -0%;
         right: 14%;
 
     }
 
     .process-steps-p4 {
-        top: -155%;
+        top: 2%;
         right: 2%;
         font-size: 20px;
         text-align: center;
+        
 
     }
 
+    .footer {
+        background-color: #000a27;
+        width: 100%;
+        height: 400px;
+        margin-top: 58%;
+
+    }
+
+    .num2 {
+        margin-top: 0.05%;
+        height: 200px;
+    }
+
+    .navbar-footer {
+
+        top: -50%;
+
+    }
+
+    .navbar-footer-ul {
+        display: block;
+    }
+
+    .icon{
+        position: relative;
+        top: -110%;
+        display: flex;
+        right:  290%;
+    }
+
+
+
+
+
+
+    .hideonMobile-footer {
+        padding: 10px 0 0px 0;
+    }
+
+
+    .footer p {
+        left: 10%;
+        top: 15%;
+        font-size: 20px;
+
+    }
+
+    .num2 img {
+        top: 30%;
+        left: 25%;
+    }
+
+    .num1 table {
+        display: none;
+        
+
+    
+
+    
 }
 
 
