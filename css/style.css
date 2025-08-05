@@ -53,7 +53,7 @@ button {
 .hendeseh-heder {
     z-index: -1;
     position: absolute;
-
+    display: flex;
 }
 
 .hndeh1 {
