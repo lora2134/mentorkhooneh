@@ -47,6 +47,7 @@ ul {
 
 a {
     text-decoration: none;
+    cursor: pointer;
 }
 
 .main-hedear {
@@ -186,6 +187,7 @@ a {
     gap: 20px;
     max-width: 100%;
     min-height: 10vh;
+    z-index: 400;
 }
 
 .sidebar {
@@ -392,15 +394,15 @@ a {
 }
 
 .tarahi {
-    top: 42px;
+    margin-top: 2vw;
     width: 100%;
-    height: 600px;
-    min-height: 130vh;
+    height: 700px;
+    min-height: 100vh;
     position: absolute;
     display: flex;
     flex-direction: column;
     position: relative;
-    
+   
     
     
 }
@@ -424,8 +426,8 @@ a {
 }
 .tarahi-matn{
     width: 100%;
-    height: 70vh;
-    max-height: 80vh;
+    height: fit-content;
+    
     z-index: 0;
 }
 .tarahi .tarahi-matn{
@@ -454,11 +456,12 @@ a {
     width: 32%;
 }
 .tarahi-texts-mark{
-
+    margin-top: 13.5%;
+    margin-right: 1%;
 }
 .tarahi-texts-h1{
-    margin-right: 5vw;
-    margin-top: 5vw;
+    margin-right: 3vw;
+    margin-top: 13vw;
     font-size: 38px;
     color: rgb(255, 255, 255);
     font-family: var(--font-family);
@@ -471,4 +474,73 @@ a {
     font-family: var(--font-family);
     font-size: 26px;
     display: flex;
+}
+.profile-pic{
+    width: 100%;
+    height: 400px;
+    min-height: 70vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2vw;
+}
+.profile-pic-text, .profile-pic-img{
+    width: 50%;
+    align-items: center;
+    flex: 1 1 300px;
+    
+}
+
+.profile-pic-pic {
+    margin: 2vw 10vw 2vw 5vw;
+    width: 400px;
+    height: 400px;
+    background-color: #728fdf;
+    border-radius: 35px;
+    background-image: url(../img/profile.png);
+    background-size: 340px 370px;
+    background-position: center;
+    background-position-y: bottom;
+    background-repeat: no-repeat;
+    
+}
+.profile-pic-text{
+    padding: 2vw 15vw 2vw 0vw;
+    color: rgb(0, 0, 0);
+    font-family: var(--font-family);
+}
+.profile-pic-mark{
+    width: 17px;
+    height: 50PX;
+    z-index: 400;
+    position: absolute;
+    background-color: var(--color-primary-orange);
+    border-radius: 8%;
+}
+.profile-pic-h1{
+    margin-right: 2vw;
+    
+    font-size: 38px;
+    color: var(--color-primary-black);
+    font-family: var(--font-family);
+}
+.profile-pic-p{
+    
+    color: var(--color-primary-black);
+    font-family: var(--font-family);
+    font-size: 24px;
+    display: flex;
+}
+.profile-pic-btn{
+    background-color: var(--Primary-Button-blue-color);
+    max-width: var(--Primary-Button-max-width);
+    border-radius: var(--Primary-Button-radius);
+    color: var(--Primary-Button-text-color);
+    font-family: var(--Primary-Button-font);
+    font-size: var(--Primary-Button-font-size);
+    border: none;
+    padding: 0.5vw 6vw 0.5vw 6vw;
+    top: 20vw;
 }
