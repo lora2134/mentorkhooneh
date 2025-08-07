@@ -64,13 +64,33 @@ a {
     height: 100%;
     z-index: -1;
     min-height: 80vh;
+    display: flex;
 }
 
 .hendeseh-heder {
     height: auto;
     transition: all 0.3s ease;
     position: absolute;
+    display: flex;
+}
 
+@media screen and (max-width:400px) {
+    .hendeseh {
+
+        display: flex;
+    }
+
+    .hendeseh-heder {
+
+        display: none;
+    }
+
+    .main-hedear {
+        max-width: 100%;
+        display: block;
+        min-height: 80vh;
+
+    }
 }
 
 .hndeh1 {
@@ -235,6 +255,12 @@ a {
     display: none;
 }
 
+.hidesidebar {
+    width: 20px;
+    margin-top: 5vw;
+    margin-right: 5vw;
+}
+
 .menubtn {
     display: none;
     margin-right: -5%;
@@ -278,7 +304,7 @@ a {
 }
 
 
-@media screen and (max-width:450px) {
+@media screen and (max-width:480px) {
 
 
     .hideonMobile {
@@ -322,6 +348,7 @@ a {
     width: 100%;
     min-height: 70vh;
 }
+
 
 .main-hedear .header-textandimg {
     display: flex;
@@ -392,6 +419,88 @@ a {
     border: none;
     padding: 0.5vw 6vw 0.5vw 6vw;
     top: 20vw;
+}
+
+@media screen and (max-width:400px) {
+    .header-textandimg {
+        position: absolute;
+        top: 0;
+        display: block;
+        width: 100%;
+        min-height: 70vh;
+    }
+
+
+    .main-hedear .header-textandimg {
+        display: flex;
+        align-items: center;
+        min-height: 80vh;
+        justify-content: space-between;
+
+    }
+
+    .groupcall {
+        width: 45%;
+
+        position: absolute;
+        left: 0%;
+        top: 0%;
+        min-height: 70vh;
+    }
+
+    .groupcall .groupcall-img-under {
+        width: 110%;
+        position: absolute;
+        left: 0%;
+        top: 0%;
+        z-index: -1;
+    }
+
+    .mentoor-img-groupvideo-phon {
+        width: 65%;
+        position: absolute;
+        left: 20%;
+        top: 4.5vw;
+    }
+
+    .text-hedear {
+        width: 45%;
+        min-height: 70vh;
+        position: absolute;
+        top: 20%;
+        right: 8.5vw;
+        font-size: clamp(20px, 1.5vw, 38px)
+    }
+
+    .page1-h1-header {
+        display: inline-block;
+        font-size: 38px;
+        font-family: var(--font-family);
+        color: var(--color-primary-black);
+        line-height: 1.2;
+        font-weight: bold
+    }
+
+    .page1-h3-header {
+
+        top: 11vw;
+        font-size: 28px;
+        color: var(--color-secondary-black);
+        font-family: var(--font-family);
+        font-weight: 500;
+    }
+
+    .page1-btn-header {
+        background-color: var(--Primary-Button-blue-color);
+        max-width: var(--Primary-Button-max-width);
+        border-radius: var(--Primary-Button-radius);
+        color: var(--Primary-Button-text-color);
+        font-family: var(--Primary-Button-font);
+        font-size: var(--Primary-Button-font-size);
+        border: none;
+        padding: 0.5vw 6vw 0.5vw 6vw;
+        top: 20vw;
+    }
 }
 
 .tarahi {
@@ -689,13 +798,16 @@ a {
     transform: translate(20px, 20px);
     margin-right: 3vw;
 }
-.eslah-h1{
+
+.eslah-h1 {
     margin-right: 10vw;
 }
-.eslah-p{
+
+.eslah-p {
     margin-right: 10vw;
     font-size: 24px;
 }
+
 .moarefi-texts {
     width: 45%;
     margin-top: 5vw;
@@ -707,9 +819,11 @@ a {
     margin-top: 5vw;
     display: grid;
 }
-.moarefi-img{
+
+.moarefi-img {
     margin-right: 10vw;
 }
+
 .amadegi-texts {
 
     width: 50%;
@@ -722,6 +836,7 @@ a {
     margin-top: 5vw;
     display: grid;
 }
+
 .amadegi-img1 {
     grid-column: 1;
     grid-row: 1;
@@ -734,10 +849,72 @@ a {
     transform: translate(20px, 20px);
     margin-right: 3vw;
 }
-.amadegi-h1{
+
+.amadegi-h1 {
     margin-right: 10vw;
 }
-.amadegi-p{
+
+.amadegi-p {
     margin-right: 10vw;
     font-size: 24px;
+}
+
+.footer {
+    background-color: #000a27;
+    width: 100%;
+    height: 150px;
+    margin-top: 10%;
+    display: flex;
+    align-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.num2 {
+    margin-top: 0.1%;
+    flex-wrap: wrap;
+}
+
+.num1-ul-navbar,
+.num1-ul-icons {
+    width: 50%;
+}
+
+.ul ul {
+    list-style: none;
+    display: flex;
+    gap: 50px;
+    margin-right: 10vw;
+    margin-top: 3vw;
+    flex-wrap: wrap;
+
+}
+
+.ul li {
+    font-size: 24px;
+}
+
+.ul a {
+    text-decoration: none;
+    color: white;
+}
+
+.num1-ul-icons ul {
+    gap: 80px;
+}
+
+.num2-p,
+.num2-img {
+    width: 50%;
+    color: white;
+    font-size: 24px;
+    margin-top: 3vw;
+}
+
+.num2-p p {
+    padding-right: 10vw;
+}
+
+.num2-img img {
+    margin-right: 29vw;
 }
