@@ -85,12 +85,7 @@ a {
         display: none;
     }
 
-    .main-hedear {
-        max-width: 100%;
-        display: block;
-        min-height: 80vh;
 
-    }
 }
 
 .hndeh1 {
@@ -421,87 +416,7 @@ a {
     top: 20vw;
 }
 
-@media screen and (max-width:400px) {
-    .header-textandimg {
-        position: absolute;
-        top: 0;
-        display: block;
-        width: 100%;
-        min-height: 70vh;
-    }
 
-
-    .main-hedear .header-textandimg {
-        display: flex;
-        align-items: center;
-        min-height: 80vh;
-        justify-content: space-between;
-
-    }
-
-    .groupcall {
-        width: 45%;
-
-        position: absolute;
-        left: 0%;
-        top: 0%;
-        min-height: 70vh;
-    }
-
-    .groupcall .groupcall-img-under {
-        width: 110%;
-        position: absolute;
-        left: 0%;
-        top: 0%;
-        z-index: -1;
-    }
-
-    .mentoor-img-groupvideo-phon {
-        width: 65%;
-        position: absolute;
-        left: 20%;
-        top: 4.5vw;
-    }
-
-    .text-hedear {
-        width: 45%;
-        min-height: 70vh;
-        position: absolute;
-        top: 20%;
-        right: 8.5vw;
-        font-size: clamp(20px, 1.5vw, 38px)
-    }
-
-    .page1-h1-header {
-        display: inline-block;
-        font-size: 38px;
-        font-family: var(--font-family);
-        color: var(--color-primary-black);
-        line-height: 1.2;
-        font-weight: bold
-    }
-
-    .page1-h3-header {
-
-        top: 11vw;
-        font-size: 28px;
-        color: var(--color-secondary-black);
-        font-family: var(--font-family);
-        font-weight: 500;
-    }
-
-    .page1-btn-header {
-        background-color: var(--Primary-Button-blue-color);
-        max-width: var(--Primary-Button-max-width);
-        border-radius: var(--Primary-Button-radius);
-        color: var(--Primary-Button-text-color);
-        font-family: var(--Primary-Button-font);
-        font-size: var(--Primary-Button-font-size);
-        border: none;
-        padding: 0.5vw 6vw 0.5vw 6vw;
-        top: 20vw;
-    }
-}
 
 .tarahi {
     margin-top: 2vw;
@@ -636,7 +551,11 @@ a {
     padding: 2vw 15vw 2vw 0vw;
     color: rgb(0, 0, 0);
     font-family: var(--font-family);
+    order: 1;
 }
+.profile-pic-img{
+    order: 2;
+} 
 
 .profile-pic-mark {
     width: 17px;
@@ -917,4 +836,347 @@ a {
 
 .num2-img img {
     margin-right: 29vw;
+}
+
+
+
+
+
+@media screen and (max-width:400px) {
+    .header-textandimg {
+        display: block;
+    }
+
+
+    .main-hedear .header-textandimg {
+        display: block;
+
+        justify-content: baseline;
+
+    }
+
+    .groupcall {
+        width: 100%;
+        height: fit-content;
+    }
+
+    .groupcall .groupcall-img-under {
+        width: 380px;
+    }
+
+    .mentoor-img-groupvideo-phon {
+        width: 65%;
+        left: 15vw;
+        top: 8.5vw;
+    }
+
+    .text-hedear {
+        width: 100%;
+        top: 60vw;
+        right: 0;
+        align-content: center;
+        text-align: center;
+    }
+
+    .page1-h1-header {
+        font-size: 20px;
+    }
+
+    .descktop-br {
+        display: none;
+    }
+
+    .page1-h3-header {
+        padding-top: 5vw;
+        font-size: 18px;
+    }
+
+    .page1-btn-header {
+        font-size: 18px;
+        border-radius: 5px;
+        padding: 0.5vw 20vw 0.5vw 20vw;
+    }
+
+
+
+
+    .tarahi {
+        margin-top: 40vw;
+        height: auto;
+        display: block;
+        flex-direction: row;
+        min-height: 50vh;
+    }
+
+
+    .tarahi-imges-vector-poor-rang {
+        top: 5vw;
+        height: 500px;
+        z-index: -400;
+    }
+
+    .tarahi-imges-vector-safheh-up {
+        height: 500px;
+        z-index: -300;
+    }
+
+    .tarahi .tarahi-matn {
+        display: block;
+        min-height: 70vh;
+
+        padding-right: 0vw;
+        align-content: center;
+        text-align: center;
+    }
+
+    .tarahi-texts-mark {
+        display: none;
+    }
+
+    .tarahi-texts,
+    .girl-on-top {
+        width: 100%;
+    }
+
+    .girl-on-top-img {
+        right: 25vw;
+        top: -13vw;
+        width: 50%;
+    }
+
+    .tarahi-texts-h1 {
+        margin-right: 0vw;
+        margin-top: -5vw;
+        padding-top: 0vw;
+        font-size: 20px;
+        color: rgb(255, 255, 255);
+
+        z-index: 400;
+
+    }
+
+    .tarahi-texts-p {
+        font-size: 15px;
+        padding: 0 2vw 0 0;
+        align-content: center;
+        width: 101%;
+    }
+
+    .profile-pic {
+        height: 400px;
+        min-height: 100vh;
+        flex-direction: row-reverse;
+        display: flex;
+        margin-top: 0vw;
+    }
+
+    .profile-pic-text,
+    .profile-pic-img {
+        width: 100%;
+        display: block;
+
+    }
+
+    .profile-pic-pic {
+        margin: 0vw 12vw 0 0vw;
+        width: 300px;
+        height: 300px;
+        background-size: 240px 270px;
+    }
+
+    .profile-pic-text {
+        padding: 2vw 0vw 2vw 0vw;
+        order: 2;
+        text-align: center;
+    }
+    .profile-pic-img{
+        order: 1;
+    }
+
+    .profile-pic-mark {
+       display: none;
+    }
+
+    .profile-pic-h1 {
+        margin-right: 2vw;
+        font-size: 24px;
+    }
+
+    .profile-pic-p {
+        font-size: 20px;
+        
+    }
+
+    .profile-pic-btn {
+        background-color: var(--Primary-Button-blue-color);
+        max-width: var(--Primary-Button-max-width);
+        border-radius: 5px;
+        color: var(--Primary-Button-text-color);
+        font-family: var(--Primary-Button-font);
+        font-size: 20px;
+        border: none;
+        padding: 0.5vw 20vw 0.5vw 20vw;
+        top: 20vw;
+    }
+
+    .tozihat {
+        margin-top: 10%;
+        width: 100%;
+        height: 550px;
+        
+    }
+
+    .tozihat-table-mobile {
+        display: table;
+        
+    }
+
+    .tozihat-table {
+        display: none;
+    }
+
+
+    
+    .process-steps-h11 {
+        padding-top: 5vw;
+        padding-bottom: 2vw;
+        font-family: var(--font-family);
+        text-align: center;
+    }
+
+
+    .arzyabi,
+    .eslah,
+    .moarefi,
+    .amadegi {
+        width: 100%;
+        display: flex;
+        align-content: space-between;
+        align-items: center;
+        min-height: 70vh;
+        flex-wrap: wrap;
+
+    }
+
+
+    .arzyabi-texts {
+        width: 45%;
+        margin-top: 5vw;
+    }
+
+    .arzyabi-pics {
+
+        width: 55%;
+        margin-top: 5vw;
+        display: grid;
+    }
+
+    .arzyabi-img1 {
+        grid-column: 1;
+        grid-row: 1;
+        margin-right: 10vw;
+
+    }
+
+    .arzyabi-img2 {
+        grid-column: 1;
+        grid-row: 1;
+        transform: translate(-20px, 20px);
+        margin-right: 10vw;
+
+    }
+
+    .arzyabi-p {
+        font-size: 24px;
+    }
+
+    .eslah-texts {
+
+        width: 50%;
+        margin-top: 5vw;
+    }
+
+    .eslah-pics {
+
+        width: 50%;
+        margin-top: 5vw;
+        display: grid;
+    }
+
+    .eslah-img1 {
+        grid-column: 1;
+        grid-row: 1;
+        margin-right: 3vw;
+    }
+
+    .eslah-img2 {
+        grid-column: 1;
+        grid-row: 1;
+        transform: translate(20px, 20px);
+        margin-right: 3vw;
+    }
+
+    .eslah-h1 {
+        margin-right: 10vw;
+    }
+
+    .eslah-p {
+        margin-right: 10vw;
+        font-size: 24px;
+    }
+
+    .moarefi-texts {
+        width: 45%;
+        margin-top: 5vw;
+    }
+
+    .moarefi-pics {
+
+        width: 55%;
+        margin-top: 5vw;
+        display: grid;
+    }
+
+    .moarefi-img {
+        margin-right: 10vw;
+    }
+
+    .amadegi-texts {
+
+        width: 50%;
+        margin-top: 5vw;
+    }
+
+    .amadegi-pics {
+
+        width: 50%;
+        margin-top: 5vw;
+        display: grid;
+    }
+
+    .amadegi-img1 {
+        grid-column: 1;
+        grid-row: 1;
+        margin-right: 3vw;
+    }
+
+    .amadegi-img2 {
+        grid-column: 1;
+        grid-row: 1;
+        transform: translate(20px, 20px);
+        margin-right: 3vw;
+    }
+
+    .amadegi-h1 {
+        margin-right: 10vw;
+    }
+
+    .amadegi-p {
+        margin-right: 10vw;
+        font-size: 24px;
+    }
+
+
+
+
 }
