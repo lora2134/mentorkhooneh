@@ -553,9 +553,10 @@ a {
     font-family: var(--font-family);
     order: 1;
 }
-.profile-pic-img{
+
+.profile-pic-img {
     order: 2;
-} 
+}
 
 .profile-pic-mark {
     width: 17px;
@@ -664,10 +665,11 @@ a {
 .arzyabi-texts {
     width: 45%;
     margin-top: 5vw;
+    order: 2;
 }
 
 .arzyabi-pics {
-
+    order: 1;
     width: 55%;
     margin-top: 5vw;
     display: grid;
@@ -693,13 +695,13 @@ a {
 }
 
 .eslah-texts {
-
+    order: 1;
     width: 50%;
     margin-top: 5vw;
 }
 
 .eslah-pics {
-
+    order: 2;
     width: 50%;
     margin-top: 5vw;
     display: grid;
@@ -730,10 +732,11 @@ a {
 .moarefi-texts {
     width: 45%;
     margin-top: 5vw;
+    order: 2;
 }
 
 .moarefi-pics {
-
+    order: 1;
     width: 55%;
     margin-top: 5vw;
     display: grid;
@@ -744,13 +747,13 @@ a {
 }
 
 .amadegi-texts {
-
+    order: 1;
     width: 50%;
     margin-top: 5vw;
 }
 
 .amadegi-pics {
-
+    order: 2;
     width: 50%;
     margin-top: 5vw;
     display: grid;
@@ -805,7 +808,7 @@ a {
     gap: 50px;
     margin-right: 10vw;
     margin-top: 3vw;
-    flex-wrap: wrap;
+
 
 }
 
@@ -966,7 +969,7 @@ a {
         height: 400px;
         min-height: 100vh;
         flex-direction: row-reverse;
-        display: flex;
+
         margin-top: 0vw;
     }
 
@@ -989,12 +992,13 @@ a {
         order: 2;
         text-align: center;
     }
-    .profile-pic-img{
+
+    .profile-pic-img {
         order: 1;
     }
 
     .profile-pic-mark {
-       display: none;
+        display: none;
     }
 
     .profile-pic-h1 {
@@ -1004,15 +1008,11 @@ a {
 
     .profile-pic-p {
         font-size: 20px;
-        
+
     }
 
     .profile-pic-btn {
-        background-color: var(--Primary-Button-blue-color);
-        max-width: var(--Primary-Button-max-width);
         border-radius: 5px;
-        color: var(--Primary-Button-text-color);
-        font-family: var(--Primary-Button-font);
         font-size: 20px;
         border: none;
         padding: 0.5vw 20vw 0.5vw 20vw;
@@ -1023,12 +1023,12 @@ a {
         margin-top: 10%;
         width: 100%;
         height: 550px;
-        
+
     }
 
     .tozihat-table-mobile {
         display: table;
-        
+
     }
 
     .tozihat-table {
@@ -1036,11 +1036,10 @@ a {
     }
 
 
-    
+
+
+
     .process-steps-h11 {
-        padding-top: 5vw;
-        padding-bottom: 2vw;
-        font-family: var(--font-family);
         text-align: center;
     }
 
@@ -1050,131 +1049,211 @@ a {
     .moarefi,
     .amadegi {
         width: 100%;
-        display: flex;
-        align-content: space-between;
-        align-items: center;
-        min-height: 70vh;
-        flex-wrap: wrap;
-
+        flex-direction: column;
+        align-content: center;
+        margin-top: 5vw;
+        margin-bottom: 0;
     }
 
 
     .arzyabi-texts {
-        width: 45%;
+        width: 100%;
         margin-top: 5vw;
+        order: 2;
     }
 
     .arzyabi-pics {
-
-        width: 55%;
-        margin-top: 5vw;
+        order: 1;
+        width: 100%;
+        margin-top: 0vw;
         display: grid;
     }
 
     .arzyabi-img1 {
-        grid-column: 1;
-        grid-row: 1;
-        margin-right: 10vw;
+        width: 300px;
 
     }
 
     .arzyabi-img2 {
-        grid-column: 1;
-        grid-row: 1;
-        transform: translate(-20px, 20px);
-        margin-right: 10vw;
+        width: 300px;
 
+    }
+
+    .arzyabi-h1 {
+        text-align: center;
+        font-size: 26px;
     }
 
     .arzyabi-p {
-        font-size: 24px;
+
+        text-align: center;
+        font-size: 20px;
     }
 
     .eslah-texts {
-
-        width: 50%;
+        order: 2;
+        width: 100%;
         margin-top: 5vw;
     }
 
     .eslah-pics {
+        order: 1;
+        width: 100%;
+        margin-top: -5vw;
 
-        width: 50%;
-        margin-top: 5vw;
-        display: grid;
     }
 
     .eslah-img1 {
-        grid-column: 1;
-        grid-row: 1;
-        margin-right: 3vw;
+        width: 300px;
+        margin-right: 12vw;
     }
 
     .eslah-img2 {
-        grid-column: 1;
-        grid-row: 1;
-        transform: translate(20px, 20px);
-        margin-right: 3vw;
+        width: 300px;
+        margin-right: 12vw;
     }
 
     .eslah-h1 {
-        margin-right: 10vw;
+        margin-right: 0;
+        text-align: center;
+        font-size: 26px;
+        padding-top: 2vw;
     }
 
     .eslah-p {
-        margin-right: 10vw;
-        font-size: 24px;
+        text-align: center;
+        font-size: 20px;
+        margin-right: 0;
     }
 
     .moarefi-texts {
-        width: 45%;
-        margin-top: 5vw;
+        width: 100%;
+        order: 2;
+        text-align: center;
     }
 
     .moarefi-pics {
-
-        width: 55%;
-        margin-top: 5vw;
-        display: grid;
+        order: 1;
+        width: 100%;
     }
 
     .moarefi-img {
-        margin-right: 10vw;
+        width: 300px;
+    }
+
+    .moarefi-h1 {
+        font-size: 26px;
+    }
+
+    .moarefi-p {
+        font-size: 20px;
     }
 
     .amadegi-texts {
-
-        width: 50%;
-        margin-top: 5vw;
+        order: 2;
+        width: 100%;
+        text-align: center;
     }
 
     .amadegi-pics {
+        order: 1;
+        width: 100%;
 
-        width: 50%;
-        margin-top: 5vw;
-        display: grid;
     }
 
     .amadegi-img1 {
-        grid-column: 1;
-        grid-row: 1;
-        margin-right: 3vw;
+        width: 300px;
+        margin-right: 12vw;
     }
 
     .amadegi-img2 {
-        grid-column: 1;
-        grid-row: 1;
-        transform: translate(20px, 20px);
-        margin-right: 3vw;
+        width: 300px;
+        margin-right: 12vw;
     }
 
     .amadegi-h1 {
-        margin-right: 10vw;
+        margin-right: 0vw;
+        font-size: 26px;
+        padding-top: 2vw;
     }
 
     .amadegi-p {
-        margin-right: 10vw;
-        font-size: 24px;
+        margin-right: 0vw;
+
+        font-size: 20px;
     }
+
+
+
+
+    .footer {
+        height: 400px;
+        margin-top: 10%;
+        display: flex;
+        align-items: center;
+        
+    }
+    .num2{
+        height: 200px;
+        margin-top: 0.1vw;
+        display: block;
+    }
+
+    
+
+    .num1-ul-navbar,
+    .num1-ul-icons {
+        width: 50%;
+    }
+
+    .ul ul {
+        
+        display: block;
+        
+        margin-right: 0vw;
+        margin-top: 0vw;
+
+
+    }
+    .num1-ul-navbar  ul{
+        margin-right: 10vw;
+    }
+
+
+    .ul li {
+        font-size: 24px;
+        padding: 35px 0 0px 0;
+    }
+
+    .ul a {
+        text-decoration: none;
+        color: white;
+    }
+
+    .num1-ul-icons ul {
+        gap: 80px;
+    }
+
+    .num2-p,
+    .num2-img {
+        width: 100%;
+        color: white;
+        font-size: 20px;
+        margin-top: 3vw;
+    }
+
+    .num2-p p {
+        padding-right: 10vw;
+        margin-top: 10vw;
+    }
+
+    .num2-img img {
+        margin-right: 29vw;
+    }
+
+
+
+
 
 
 
